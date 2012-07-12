@@ -38,6 +38,7 @@ h4 img, h5 img, h6 img {
 -------------------------------------------------------------- */
 
 p           { margin: 0 0 1.5em; }
+<<<<<<< HEAD
 p img.left  { float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
 p img.right { float: right; margin: 1.5em 0 1.5em 1.5em; }
 
@@ -49,6 +50,24 @@ blockquote  { margin: 1.5em; color: #666; font-style: italic; }
 strong      { font-weight: bold; }
 em,dfn      { font-style: italic; }
 dfn         { font-weight: bold; }
+=======
+/*
+  These can be used to pull an image at the start of a paragraph, so
+  that the text flows around it (usage: <p><img class="left">Text</p>)
+ */
+.left       { float: left !important; }
+p .left     { margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+.right      { float: right !important; }
+p .right    { margin: 1.5em 0 1.5em 1.5em; padding: 0; }
+
+a:focus,
+a:hover     { color: #09f; }
+a           { color: #06c; text-decoration: underline; }
+
+blockquote  { margin: 1.5em; color: #666; font-style: italic; }
+strong,dfn  { font-weight: bold; }
+em,dfn      { font-style: italic; }
+>>>>>>> filling-in-layout
 sup, sub    { line-height: 0; }
 
 abbr,
@@ -64,6 +83,7 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
 -------------------------------------------------------------- */
 
 li ul,
+<<<<<<< HEAD
 li ol       { margin: 0; }
 ul, ol      { margin: 0 1.5em 1.5em 0; padding-left: 3.333em; }
 
@@ -73,16 +93,47 @@ ol          { list-style-type: decimal; }
 dl          { margin: 0 0 1.5em 0; }
 dl dt       { font-weight: bold; }
 dd          { margin-left: 1.5em;}
+=======
+li ol  { margin: 0; }
+ul, ol { margin: 0 1.5em 1.5em 0; padding-left: 1.5em; }
+
+ul     { list-style-type: disc; }
+ol     { list-style-type: decimal; }
+
+dl     { margin: 0 0 1.5em 0; }
+dl dt  { font-weight: bold; }
+dd     { margin-left: 1.5em;}
+>>>>>>> filling-in-layout
 
 
 /* Tables
 -------------------------------------------------------------- */
 
+<<<<<<< HEAD
 table       { margin-bottom: 1.4em; width:100%; }
 th          { font-weight: bold; }
 thead th    { background: #c3d9ff; }
 th,td,caption { padding: 4px 10px 4px 5px; }
 tr.even td  { background: #e5ecf9; }
+=======
+/*
+  Because of the need for padding on TH and TD, the vertical rhythm
+  on table cells has to be 27px, instead of the standard 18px or 36px
+  of other elements.
+ */
+table         { margin-bottom: 1.4em; width:100%; }
+th            { font-weight: bold; }
+thead th      { background: #c3d9ff; }
+th,td,caption { padding: 4px 10px 4px 5px; }
+/*
+  You can zebra-stripe your tables in outdated browsers by adding
+  the class "even" to every other table row.
+ */
+tbody tr:nth-child(even) td,
+tbody tr.even td  {
+  background: #e5ecf9;
+}
+>>>>>>> filling-in-layout
 tfoot       { font-style: italic; }
 caption     { background: #eee; }
 
@@ -90,6 +141,7 @@ caption     { background: #eee; }
 /* Misc classes
 -------------------------------------------------------------- */
 
+<<<<<<< HEAD
 .small      { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
 .large      { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
 .hide       { display: none; }
@@ -104,3 +156,19 @@ caption     { background: #eee; }
 .last       { margin-right:0; padding-right:0; }
 .top        { margin-top:0; padding-top:0; }
 .bottom     { margin-bottom:0; padding-bottom:0; }
+=======
+.small     { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
+.large     { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
+.hide      { display: none; }
+
+.quiet     { color: #666; }
+.loud      { color: #000; }
+.highlight { background:#ff0; }
+.added     { background:#060; color: #fff; }
+.removed   { background:#900; color: #fff; }
+
+.first     { margin-left:0; padding-left:0; }
+.last      { margin-right:0; padding-right:0; }
+.top       { margin-top:0; padding-top:0; }
+.bottom    { margin-bottom:0; padding-bottom:0; }
+>>>>>>> filling-in-layout
