@@ -9,6 +9,7 @@ gem 'rails', '3.2.1'
 group :development do
   gem 'sqlite3'
   gem 'rspec-rails', '2.5.0'
+  gem 'annotate'
 end
 group :production do
   gem 'pg'
