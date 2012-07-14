@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
+gem 'gravatar_image_tag', '1.0.0.pre2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -25,6 +26,7 @@ group :test do
   gem 'webrat', '0.7.1'
 # gem 'spork', '0.9.0.rc5'
   gem 'spork'
+  gem 'factory_girl_rails', '1.0'
 end
 
 
